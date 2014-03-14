@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Oncourse::VERSION
   spec.authors       = ["steve"]
   spec.email         = ["stevecd123@gmail.com"]
-  spec.summary       = %q{A gem to make some tedious oncourse tasks less tedious.}
-  spec.description   = %q{oncoursesystems.com's interface is very tedious to work with for certain cases and this gem seeks to automate some of it.}
+  spec.summary       = %q{Provides a basic lessonplan API}
+  spec.description   = %q{oncoursesystems.com's interface is very tedious to work with in a lot of cases, this gem uses mechanize to scrape and post lessonplan data}
   spec.homepage      = "https://github.com/stevecd/ruby-oncourse"
   spec.license       = "MIT"
 
@@ -19,5 +19,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.5"
+  spec.add_development_dependency "pry"
   spec.add_development_dependency "rake"
+  
+  spec.add_runtime_dependency "mechanize"
 end
