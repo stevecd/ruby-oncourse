@@ -1,6 +1,6 @@
 # Oncourse
 
-Oncoursesystems.com is a web app written in ext3js that handles managing teacher
+Oncoursesystems.com is a web app written in extjs that handles managing teacher
 lesson plans amongst many other things.  It has proven to be incredibly tedious to
 work with so I spent a day parsing its html and json requests involved with lessonplan
 editing.  This gem is the result.
