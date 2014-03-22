@@ -223,8 +223,9 @@ module Oncourse
     # This method will absolutely overwrite anything that occupies this place
     # in the lesson plan.  To play it safe, one should call read_lesson and store
     # that response somewhere before using post lesson.  This way there is a backup
-    # of previous work.  Oncourse does not appear to keep a revision history on
-    # lesson plans.
+    # of previous work.  Oncourse does keep a revision history on lesson plans so
+    # you will probably be able to undo mistakes.
+    
     def post_lesson(lesson, homework, date, period)
       response = @mech.post(URLS[:post_lesson], {
         userId: @user_id,
